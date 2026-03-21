@@ -212,14 +212,11 @@ int main() {
     std::cout << "\n";
 
     // ==================== 2. Debug vs Release ====================
-    // Для этого нужно скомпилировать два раза: без оптимизаций и с оптимизациями
-    // Здесь просто показываем, как будет выглядеть вывод в Release.
-    // При запуске в Debug (без -O3) будет медленнее.
     std::cout << "=== Performance comparison (Release build) ===\n";
     std::cout << "Algorithm                      | N      | time (s) | GFLOPS   \n";
     std::cout << "-------------------------------------------------------------\n";
 
-    // Выбираем N для экспериментов (можно менять)
+    // Выбираем N для экспериментов
     // Для быстрых тестов - небольшие N, для полной картины - от 32 до 2048
     // Рекомендуемые N: 32, 64, 128, 256, 512, 1024, 2048, 4096 (если хватает памяти)
     int test_sizes[] = {64, 128, 256, 512, 1024, 2048, 4096};
@@ -238,7 +235,7 @@ int main() {
         // 2. Транспонирование
         measure_and_print("Transposed B", [&]() { mul_transposed(A, B, C, N); }, N);
 
-        // 3. Буферизованное с оптимальной раскруткой (найдём позже)
+        // 3. Буферизованное с оптимальной раскруткой
         // Для предварительной оценки используем M=4
         measure_and_print("Buffered (M=4)", [&]() { mul_buffered_unrolled(A, B, C, N, 4); }, N);
 
@@ -252,7 +249,7 @@ int main() {
 
     // ==================== 3. Поиск оптимальной раскрутки M для буферизованного ====================
     std::cout << "\n=== Buffered multiplication: varying unroll factor M ===\n";
-    int N_fixed = 1024;  // фиксируем N (можно выбрать другой)
+    int N_fixed = 1024;  // фиксируем N
     float* A = new float[N_fixed * N_fixed];
     float* B = new float[N_fixed * N_fixed];
     float* C = new float[N_fixed * N_fixed]();
@@ -290,7 +287,5 @@ int main() {
         std::cout << "\n";
     }
     delete[] A; delete[] B; delete[] C;
-
-    std::cout << "\n=== Done. Use these results to build graphs and draw conclusions. ===\n";
     return 0;
 }
