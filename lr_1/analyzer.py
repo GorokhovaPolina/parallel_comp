@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt('./data/data_optimized.txt', comments='#')
+data = np.loadtxt('./data/data_windows.txt', comments='#')
 t1 = data[:, 0]  # нс
 t2 = data[:, 1]  # тики
 t3 = data[:, 2]  # секунды
