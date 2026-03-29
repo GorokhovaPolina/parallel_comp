@@ -1,0 +1,99 @@
+Производитель: GenuineIntel
+Макс. базовый leaf: 0x14
+
+--- Информация о процессоре (leaf 1) ---
+Stepping: 4, Model: 13, Family: 6, Extended model: 3, Extended family: 0, Processor type: 0
+Max logical processors per core: 16, Local APIC ID: 0
+Поддерживаемые технологии (EDX):
+  FPU
+  VME
+  DE
+  PSE
+  TSC
+  MSR
+  PAE
+  MCE
+  CX8
+  APIC
+  SEP
+  MTRR
+  PGE
+  MCA
+  CMOV
+  PAT
+  PSE36
+  CLFSH
+  DS
+  ACPI
+  MMX
+  FXSR
+  SSE
+  SSE2
+  SS
+  HTT
+  TM
+  PBE
+Поддерживаемые технологии (ECX):
+  SSE3
+  PCLMULQDQ
+  DTES64
+  MONITOR
+  DS-CPL
+  VMX
+  SMX
+  EST
+  TM2
+  SSSE3
+  SDBG
+  FMA3
+  CX16
+  xTPR
+  PDCM
+  PCID
+  SSE4.1
+  SSE4.2
+  x2APIC
+  MOVBE
+  POPCNT
+  TSC-Deadline
+  AESNI
+  XSAVE
+  OSXSAVE
+  AVX
+  F16C
+  RDRAND
+
+--- Информация о кэш-памяти (leaf 4) ---
+Кэш 0: Data, уровень 1, разделяется 2 потоков, размер 32 КБ, эксклюзивный
+  line size = 64, associativity = 8, sets = 64
+Кэш 1: Instruction, уровень 1, разделяется 2 потоков, размер 32 КБ, эксклюзивный
+  line size = 64, associativity = 8, sets = 64
+Кэш 2: Unified, уровень 2, разделяется 2 потоков, размер 256 КБ, эксклюзивный
+  line size = 64, associativity = 8, sets = 512
+Кэш 3: Unified, уровень 3, разделяется 16 потоков, размер 3072 КБ, эксклюзивный
+  line size = 64, associativity = 12, sets = 4096
+
+--- Расширенные возможности (leaf 7, max subleaf = 0) ---
+Флаги EBX (leaf 7, ECX=0):
+  FSGSBASE
+  IA32_TSC_ADJUST
+  BMI1
+  HLE
+  AVX2
+  SMEP
+  BMI2
+  ERMS
+  INVPCID
+  RTM
+  ZERO_FCS_FDS
+  RDSEED
+  ADX
+  SMAP
+  INTEL_PT
+
+--- Расширенные функции (макс. leaf = 0x80000008) ---
+Флаги ECX (leaf 0x80000001):
+  LZCNT
+  PREFETCHW
+Флаги EDX (leaf 0x80000001):
+Название процессора: Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz
