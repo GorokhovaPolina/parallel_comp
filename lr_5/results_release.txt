@@ -1,0 +1,21 @@
+
+=== Multiplication uint8_t -> uint16_t, N = 10000000
+
+Implementation           Time (ms)     Speedup
+----------------------------------------------
+Scalar (O2)                 11.446        1.00
+Scalar unroll 2             19.357       0.591
+Scalar unroll 4             11.266       1.016
+Scalar unroll 8              9.093       1.259
+MMX                          3.954       2.895
+MMX unroll 2                 3.564       3.211
+MMX unroll 4                 3.924       2.917
+MMX unroll 8                 4.716       2.427
+SSE2                         4.430       2.584
+SSE2 unroll 2                3.713       3.083
+SSE2 unroll 4                4.502       2.543
+SSE2 unroll 8                3.411       3.356
+AVX2                         4.033       2.838
+AVX2 unroll 2                3.562       3.214
+AVX2 unroll 4                3.693       3.100
+AVX2 unroll 8                4.173       2.743
