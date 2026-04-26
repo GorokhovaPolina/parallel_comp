@@ -1,0 +1,3 @@
+Method,Avg Time (ms),Speedup
+Scalar,1.07687,1.00x
+AVX,0.387706,2.77755x

@@ -13,3 +13,9 @@ https://github.com/GorokhovaPolina/parallel_comp/tree/main/lr_3
 
 Лабораторная работа №4:
 https://github.com/GorokhovaPolina/parallel_comp/tree/main/lr_4
+
+Лабораторная работа №5:
+https://github.com/GorokhovaPolina/parallel_comp/tree/main/lr_5
+
+Лабораторная работа №7:
+https://github.com/GorokhovaPolina/parallel_comp/tree/main/lr_7
