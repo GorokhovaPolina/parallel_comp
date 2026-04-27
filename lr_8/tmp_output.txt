@@ -1,0 +1,5 @@
+Matrix size: 1024x1024, tile size S=0
+CPU time: 8.03666 s
+Naive (16x16)        time: 0.0141112 s perf: 152.183  Gflops match: yes err: no error
+Row cache            time: 0.00990627 s perf: 216.78   Gflops match: yes err: no error
+Col cache            time: 0.0863695 s perf: 24.8639  Gflops match: yes err: no error
